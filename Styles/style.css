@@ -121,7 +121,7 @@ section {
 }
 
 #header h1 {
-  width: 768px;
+  max-width: 768px;
   font-weight: 900;
   margin-bottom: 15px;
   font-size: 1.9rem;
@@ -129,7 +129,7 @@ section {
 }
 
 #header p {
-  width: 768px;
+  max-width: 768px;
   font-weight: 200;
   font-size: 1rem;
 }
@@ -170,7 +170,7 @@ h5 {
 }
 
 select {
-  width: 68vw;
+  max-width: 68vw;
   height: auto;
   text-align: center;
   display: -webkit-box;
@@ -206,7 +206,7 @@ select option {
 
 .row,
 .col {
-  width: 68vw;
+  max-width: 68vw;
   height: auto;
   text-align: left;
   display: -webkit-box;
@@ -237,6 +237,17 @@ select option {
 .col * {
   -webkit-transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
   transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .row,
+  .col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .col {

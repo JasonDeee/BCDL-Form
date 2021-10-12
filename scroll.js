@@ -60,7 +60,15 @@ function render() {
   dy = Math.floor(dy * 100) / 100;
 
   main.style.transform = `translateY(-${dy}px)`;
-  background.style.transform = `translateY(-${(77 * dy) / main.clientHeight}%)`;
+  if (window.innerWidth > 768) {
+    background.style.transform = `translateY(-${
+      (75 * dy) / main.clientHeight
+    }%)`;
+  } else if (window.innerWidth < 768) {
+    background.style.transform = `translateY(-${
+      (20 * dy) / main.clientHeight
+    }%)`;
+  }
 
   window.requestAnimationFrame(render);
 }
