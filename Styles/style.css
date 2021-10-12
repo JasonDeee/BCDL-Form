@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: "Lexend", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  -webkit-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+::-webkit-scrollbar:hover {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e9e7e756;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #151515;
+}
+
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: overlay;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.background img {
+  width: 100%;
+}
+
+.background::after {
+  content: "";
+  background: #00000096;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section {
+  min-height: 10vh;
+  background: 1;
+}
+
+#main_scroll {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: none;
+  transition: none;
+  position: fixed;
+  padding-bottom: 40vh;
+}
+
+#header {
+  width: 68vw;
+  height: auto;
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #ffffff33;
+  border-radius: 15px;
+  border-bottom: solid 1px #ffffff56;
+  border-right: solid 1px #ffffff56;
+  -webkit-backdrop-filter: blur(2vw);
+          backdrop-filter: blur(2vw);
+  -webkit-box-shadow: 2vw 2vw 3vw #00000096;
+          box-shadow: 2vw 2vw 3vw #00000096;
+  padding: 30px;
+}
+
+#header h1 {
+  width: 768px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-size: 1.9rem;
+  line-height: 2.8rem;
+}
+
+#header p {
+  width: 768px;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.hor_line {
+  height: 1px;
+  width: 68vw;
+  background: #a9a7a7;
+}
+
+h3 {
+  color: #a9a7a7;
+  width: 68vw;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: 600;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+h2 {
+  margin-top: 15vh;
+  width: 68vw;
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  color: #d9d7d7;
+}
+
+h5 {
+  color: #d9d7d7;
+}
+
+select {
+  width: 68vw;
+  height: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #ffffff33;
+  border-radius: 15px;
+  border-bottom: solid 1px #ffffff56;
+  border-right: solid 1px #ffffff56;
+  -webkit-backdrop-filter: blur(2vw);
+          backdrop-filter: blur(2vw);
+  -webkit-box-shadow: 2vw 2vw 3vw #00000096;
+          box-shadow: 2vw 2vw 3vw #00000096;
+  padding: 30px;
+}
+
+select option {
+  display: inline-block;
+  position: relative;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.row,
+.col {
+  width: 68vw;
+  height: auto;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #ffffff33;
+  border-radius: 15px;
+  border-bottom: solid 1px #ffffff56;
+  border-right: solid 1px #ffffff56;
+  -webkit-backdrop-filter: blur(2vw);
+          backdrop-filter: blur(2vw);
+  -webkit-box-shadow: 2vw 2vw 3vw #00000096;
+          box-shadow: 2vw 2vw 3vw #00000096;
+  padding: 30px;
+}
+
+.row *,
+.col * {
+  -webkit-transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+  transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+}
+
+.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 5vh;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark,
+.checkBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e9e7e750;
+  border-radius: 50%;
+  border: solid 3px #e9e7e700;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  border: solid 3px #e9e7e750;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  border: solid 3px white;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkBox {
+  background-color: #e9e7e750;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkBox {
+  background-color: #e9e7e750;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkBox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkBox:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkBox:after {
+  width: 40%;
+  height: 70%;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+input {
+  background: #e9e7e730;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  height: 50px;
+  color: white;
+  width: 35vw;
+  padding-left: 20px;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff96;
+}
+
+input:-ms-input-placeholder {
+  color: #ffffff96;
+}
+
+input::-ms-input-placeholder {
+  color: #ffffff96;
+}
+
+input::placeholder {
+  color: #ffffff96;
+}
+
+input:focus,
+input:hover,
+input:valid {
+  background: #e9e7e750;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+/* Style the indicator (dot/circle) */
+#submit_button {
+  margin-top: 10vh;
+  width: 15vw;
+  height: 60px;
+  background: #ffffff33;
+  -webkit-backdrop-filter: blur(2vw);
+          backdrop-filter: blur(2vw);
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+  transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+  -webkit-box-shadow: 2vw 2vw 3vw #00000096;
+          box-shadow: 2vw 2vw 3vw #00000096;
+}
+
+#submit_button:hover {
+  background: #e9e7e796;
+}
+
+#loading {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../Images/DecorDot.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: rotateing 2s linear infinite;
+          animation: rotateing 2s linear infinite;
+}
+
+@-webkit-keyframes rotateing {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateing {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

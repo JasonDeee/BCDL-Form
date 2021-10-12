@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        color: white;
+
+        font-family: "Lexend", sans-serif;
+      }
+
+      ::-webkit-scrollbar {
+        width: 2px;
+        transition: width 0.5s ease-out;
+        transform: translateX(5px);
+      }
+      ::-webkit-scrollbar:hover {
+        width: 15px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e9e7e756;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #151515;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        background-position: center;
+        background-size: cover;
+
+        background-image: url("https://www.angelahopperphotography.com/wp-content/uploads/2019/03/Food-Photography-16.jpg");
+      }
+      #filter {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #00000050;
+        backdrop-filter: blur(2vw);
+        z-index: -1;
+      }
+      #IMG {
+        width: 25vw;
+        aspect-ratio: 1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-color: white;
+        border-radius: 50%;
+        background-image: url(../Images/tenor.gif);
+        margin-bottom: 10vh;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 3vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="filter"></div>
+    <div id="IMG"></div>
+    <h1>GRAZIE</h1>
+    <p>Nhóm 6 chân thành cám ơn!</p>
+  </body>
+</html>

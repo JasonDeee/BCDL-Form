@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KHẢO SÁT THÓI QUEN ĂN UỐNG</title>
+
+    <meta
+      name="description"
+      content="Nhóm 6 | KHẢO SÁT THÓI QUEN ĂN UỐNG CỦA SINH VIÊN HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH
+          VIỄN THÔNG (PTIT)"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Images/Favicon2.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./Images/Favicon2.ico" type="image/x-icon" />
+    <img src="./Images/Social.jpg" alt="Socials Image" style="display: none" />
+
+    <link rel="stylesheet" href="./Styles/style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <img
+        src="https://www.angelahopperphotography.com/wp-content/uploads/2019/03/Food-Photography-16.jpg"
+        alt="BACKGROUND"
+      />
+    </div>
+    <main id="main_scroll">
+      <section id="header">
+        <h1>
+          KHẢO SÁT THÓI QUEN ĂN UỐNG CỦA SINH VIÊN HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH
+          VIỄN THÔNG (PTIT)
+        </h1>
+        <p>
+          Vui lòng trả lời các câu hỏi sau, liên quan đến thói quen ăn uống của
+          bạn trong 7 ngày trước đó.<br />
+          Trong trường hợp thói quen ăn uống của bạn trong 7 ngày trước đó đã
+          khác đáng kể so với mọi khi (bởi vì bạn có thể đã đi nghỉ, bạn có thể
+          đã tạm thời thay đổi thói quen làm việc của bạn hoặc một sự kiện trong
+          đời đã xảy ra, v.v.), vui lòng xem thời gian trước khoảng thời gian
+          này và trả lời các câu hỏi.
+        </p>
+      </section>
+      <h3>
+        Vui lòng điền hết các trường nhé.<br />Nhóm 6 cám ơn sự đóng góp của bạn
+        =)
+      </h3>
+      <div class="hor_line"></div>
+      <form action="" id="SForm" method="POST">
+        <h2 for="studentYear">Bạn là sinh viên năm mấy?</h2>
+        <div class="row radio" id="studentYear">
+          <label class="container"
+            >Năm 1
+            <input required type="radio" name="studentYear" value="Năm 1" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Năm 2
+            <input required type="radio" name="studentYear" value="Năm 2" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Năm 3
+            <input required type="radio" name="studentYear" value="Năm 3" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Năm 4
+            <input required type="radio" name="studentYear" value="Năm 4" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Năm 5
+            <input required type="radio" name="studentYear" value="Năm 5" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <h2 for="locations">Bạn đang ở đâu?</h2>
+        <div class="col radio" id="locations">
+          <label class="container"
+            >Kí túc xá
+            <input required type="radio" name="locations" value="Kí túc xá" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Ở trọ
+            <input required type="radio" name="locations" value="Ở trọ" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Ở nhà
+            <input required type="radio" name="locations" value="Ở nhà" />
+            <span class="checkmark"></span>
+          </label>
+          <input
+            required
+            type="text"
+            name="locations"
+            required
+            placeholder="Một nơi khác :)"
+          />
+        </div>
+
+        <h2 for="regularly">Bạn có thường xuyên nấu ăn không?</h2>
+        <div class="col radio" id="regularly">
+          <label class="container"
+            >Hầu như tất cả các ngày
+            <input
+              required
+              type="radio"
+              name="regularly"
+              value="Hầu như tất cả các ngày"
+            />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Đôi khi
+            <input required type="radio" name="regularly" value="Đôi khi" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Hầu như không
+            <input
+              required
+              type="radio"
+              name="regularly"
+              value="Hầu như không"
+            />
+            <span class="checkmark"></span>
+          </label>
+          <input
+            required
+            type="text"
+            name="regularly"
+            required
+            placeholder="Style nấu ăn khác!!!"
+          />
+        </div>
+        <h2 for="self_serve">Bạn có tự nấu ăn không?</h2>
+        <div class="row radio" id="self_serve">
+          <div></div>
+          <label class="container"
+            >Có
+            <input required type="radio" name="self_serve" value="Có" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Không
+            <input required type="radio" name="self_serve" value="Không" />
+            <span class="checkmark"></span>
+          </label>
+          <div></div>
+        </div>
+        <h2 for="feedtime">Trung bình bạn ăn bao nhiêu bữa một ngày?</h2>
+        <div class="row radio" id="feedtime">
+          <label class="container"
+            >1
+            <input required type="radio" name="feedtime" value="1" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >2
+            <input required type="radio" name="feedtime" value="2" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >3
+            <input required type="radio" name="feedtime" value="3" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Nhiều hơn 3
+            <input required type="radio" name="feedtime" value="Nhiều hơn 3" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <h2 for="howIsFood">
+          Bạn sẽ sẵn sàng chuẩn bị cho một bữa ăn trong bao lâu?
+        </h2>
+        <div class="col radio" id="howlong">
+          <label class="container"
+            >Dưới 10 phút
+            <input required type="radio" name="howlong" value="Dưới 10 phút" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >10 - 20 phút
+            <input required type="radio" name="howlong" value="10 - 20 phút" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >20 - 30 phút
+            <input required type="radio" name="howlong" value="20 - 30 phút" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Nhiều hơn 30 phút (Ối dồi ôi)
+            <input
+              required
+              type="radio"
+              name="howlong"
+              value="Nhiều hơn 30 phút"
+            />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <h2 for="howIsFood">Bạn thường chọn ăn những món ăn như thế nào?</h2>
+        <div class="col radio" id="howIsFood">
+          <label class="container"
+            >Ngon miệng là được :(
+            <input required type="radio" name="howIsFood" value="Ngon" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Phải tốt cho sức khỏe cơ
+            <input
+              required
+              type="radio"
+              name="howIsFood"
+              value="Tốt cho sức khỏe"
+            />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Tiện thì ăn
+            <input required type="radio" name="howIsFood" value="Tiện lợi" />
+            <span class="checkmark"></span>
+          </label>
+          <input
+            required
+            type="text"
+            name="howIsFood"
+            required
+            placeholder="Mình chọn thực phẩm kiểu khác... Dead!!!"
+          />
+        </div>
+
+        <h2 for="makingstyle">
+          Bạn thích các món ăn được chế biến dưới dạng nào?
+        </h2>
+        <div class="col radio" id="makingstyle">
+          <h5>*Nhiều đáp án</h5>
+          <label class="container"
+            >Xào
+            <input required type="checkbox" name="makingstyle" value="Xào" />
+            <span class="checkBox"></span>
+          </label>
+          <label class="container"
+            >Rán
+            <input required type="checkbox" name="makingstyle" value="Rán" />
+            <span class="checkBox"></span>
+          </label>
+          <label class="container"
+            >Luộc
+            <input required type="checkbox" name="makingstyle" value="Luộc" />
+            <span class="checkBox"></span>
+          </label>
+          <label class="container"
+            >Nướng
+            <input required type="checkbox" name="makingstyle" value="Nướng" />
+            <span class="checkBox"></span>
+          </label>
+          <input
+            required
+            type="text"
+            name="makingstyle"
+            required
+            placeholder="Một kiểu chế biến khác"
+          />
+        </div>
+
+        <h2 for="schedule">Lịch trình của bạn như thế nào?</h2>
+        <div class="col radio" id="schedule">
+          <label class="container"
+            >Rảnh lắm nha!!!
+            <input required type="radio" name="schedule" value="Khá rảnh rỗi" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Tôi ổn, không có vấn đề thời gian.
+            <input
+              required
+              type="radio"
+              name="schedule"
+              value="Có thể thu xếp được thời gian"
+            />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Bận lắm luôn!!!
+            <input required type="radio" name="schedule" value="Bận rộn" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <h2 for="eatOut">Bạn có thường xuyên ăn ngoài hay không?</h2>
+        <div class="row radio" id="eatOut">
+          <div></div>
+          <label class="container"
+            >Có
+            <input required type="radio" name="eatOut" value="Có" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Không
+            <input required type="radio" name="eatOut" value="Không" />
+            <span class="checkmark"></span>
+          </label>
+          <div></div>
+        </div>
+
+        <h2 for="MoneyPay">Số tiền bạn bỏ ra cho việc ăn uống mỗi tháng?</h2>
+        <div class="col radio" id="MoneyPay">
+          <label class="container"
+            >Chưa tới 1 triệu lun. Ít lắm.
+            <input required type="radio" name="MoneyPay" value="< 1 triệu" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Từ 1 - 2 Triệu VNĐ
+            <input required type="radio" name="MoneyPay" value="1 - 2 triệu" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Hơn 2 Triệu á!
+            <input required type="radio" name="MoneyPay" value="> 2 triệu" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <h2 for="HowSafe">
+          Bạn đánh giá thế nào về mức độ “lành mạnh” trong thói quen ăn uống của
+          bạn?
+        </h2>
+        <div class="row radio" id="HowSafe">
+          <div></div>
+          <label class="container"
+            >Tệ
+            <input required type="radio" name="HowSafe" value="Kém" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Cũng Ô KÊ. :)
+            <input required type="radio" name="HowSafe" value="Trung bình" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >VERY GOOD!
+            <input required type="radio" name="HowSafe" value="Tốt" />
+            <span class="checkmark"></span>
+          </label>
+          <div></div>
+        </div>
+
+        <h2 for="Reason">
+          Nguyên nhân chính khiến thói quen ăn uống của bạn không được lành mạnh
+          là gì?
+        </h2>
+        <div class="col radio" id="Reason">
+          <h5>*Nhiều đáp án</h5>
+          <label class="container"
+            >Tui có vấn đề về tài chính.
+            <input required type="checkbox" name="Reason" value="Tiền bạc" />
+            <span class="checkBox"></span>
+          </label>
+          <label class="container"
+            >Không đủ thời gian
+            <input
+              required
+              type="checkbox"
+              name="Reason"
+              value="Không đủ thời gian"
+            />
+            <span class="checkBox"></span>
+          </label>
+          <label class="container"
+            >Không quan tâm
+            <input
+              required
+              type="checkbox"
+              name="Reason"
+              value="Không quan tâm"
+            />
+            <span class="checkBox"></span>
+          </label>
+          <input
+            required
+            type="text"
+            name="Reason"
+            required
+            placeholder="Nguyên nhân khác"
+          />
+        </div>
+        <button type="submit" id="submit_button">
+          Gửi nhé!
+          <span id="loading"></span>
+        </button>
+      </form>
+    </main>
+  </body>
+  <script src="./scroll.js"></script>
+  <script src="./data.js"></script>
+</html>
