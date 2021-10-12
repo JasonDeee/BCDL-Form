@@ -246,7 +246,29 @@ select option {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 77vw;
     gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #header {
+    width: 100vw;
+    height: auto;
+    border-radius: 0;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    padding: 30px;
+  }
+  #header h1 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  #header p {
+    max-width: 768px;
+    font-weight: 200;
+    font-size: 1rem;
   }
 }
 
@@ -357,6 +379,12 @@ input {
   color: white;
   width: 35vw;
   padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 55vw;
+  }
 }
 
 input::-webkit-input-placeholder {
