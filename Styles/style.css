@@ -240,6 +240,9 @@ select option {
 }
 
 @media screen and (max-width: 768px) {
+  #main_scroll {
+    position: absolute;
+  }
   .row,
   .col {
     -webkit-box-orient: vertical;

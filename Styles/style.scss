@@ -187,6 +187,10 @@ select {
   }
 }
 @media screen and (max-width: 768px) {
+  #main_scroll {
+    position: absolute;
+  }
+
   .row,
   .col {
     flex-direction: column;

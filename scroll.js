@@ -59,15 +59,17 @@ function render() {
 
   dy = Math.floor(dy * 100) / 100;
 
-  main.style.transform = `translateY(-${dy}px)`;
   if (window.innerWidth > 768) {
     background.style.transform = `translateY(-${
       (75 * dy) / main.clientHeight
     }%)`;
+
+    main.style.transform = `translateY(-${dy}px)`;
   } else if (window.innerWidth < 768) {
     background.style.transform = `translateY(-${
       (20 * dy) / main.clientHeight
     }%)`;
+    main.style = ``;
   }
 
   window.requestAnimationFrame(render);
