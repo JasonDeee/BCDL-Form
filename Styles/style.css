@@ -300,7 +300,7 @@ select option {
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  border: solid 3px #e9e7e750;
+  border: solid 3px #e9e7e7;
 }
 
 /* When the radio button is checked, add a blue background */
@@ -337,8 +337,8 @@ select option {
   left: 0;
   right: 0;
   margin: auto;
-  width: 8px;
-  height: 8px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   background: #e9e7e7;
 }
