@@ -191,52 +191,6 @@ select {
     transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
   }
 }
-@media screen and (max-width: 768px) {
-  #main_scroll {
-    position: absolute;
-  }
-  .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-image: url("https://www.angelahopperphotography.com/wp-content/uploads/2019/03/Food-Photography-16.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 150vh;
-
-    img {
-      opacity: 0;
-    }
-  }
-  .row,
-  .col {
-    flex-direction: column;
-    max-width: 77vw;
-    gap: 20px;
-    align-items: flex-start;
-  }
-
-  #header {
-    width: 100vw;
-    height: auto;
-    border-radius: 0;
-    text-align: center;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-
-    padding: 30px;
-    h1 {
-      font-size: 1.3rem;
-      line-height: 2rem;
-    }
-    p {
-      max-width: 768px;
-      font-weight: 200;
-      font-size: 1rem;
-    }
-  }
-}
 
 .col {
   flex-direction: column;
@@ -393,5 +347,54 @@ input:valid {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main_scroll {
+    position: absolute;
+  }
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("https://www.angelahopperphotography.com/wp-content/uploads/2019/03/Food-Photography-16.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 150vh;
+
+    img {
+      opacity: 0;
+    }
+  }
+  .row,
+  .col {
+    flex-direction: column;
+    max-width: 77vw;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  #submit_button {
+    width: 35vw;
+  }
+  #header {
+    width: 100vw;
+    height: auto;
+    border-radius: 0;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+
+    padding: 30px;
+    h1 {
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+    p {
+      max-width: 768px;
+      font-weight: 200;
+      font-size: 1rem;
+    }
   }
 }
