@@ -179,7 +179,7 @@ makingstyle.addEventListener("click", (e) => {
   for (let index = 0; index < makingsDataAr.length; index++) {
     makingsData[index] = makingsDataAr[index].value;
   }
-  console.log(makingsData.toString(""));
+  console.log(makingsData.join(", "));
 });
 
 makingstyleOther.addEventListener("change", (e) => {
@@ -235,7 +235,7 @@ Reason.addEventListener("click", (e) => {
   for (let index = 0; index < ReasonDataArr.length; index++) {
     ReasonData[index] = ReasonDataArr[index].value;
   }
-  console.log(ReasonData);
+  console.log(ReasonData.join(", "));
 });
 
 ReasonOther.addEventListener("change", (e) => {
@@ -261,12 +261,12 @@ submit_button.addEventListener(
       "entry.1574580861": feedtimData,
       "entry.2118881343": howlongData,
       "entry.661236967": howIsFoData + howIsFoDataOther,
-      "entry.1769248607": makingsData.toString("") + makingsDataOther,
+      "entry.1769248607": makingsData.join(", ") + makingsDataOther,
       "entry.1261103475": schedulData,
       "entry.2142570847": eatOutData,
       "entry.851285011": MoneyPaData,
       "entry.830879642": HowSafeData,
-      "entry.857702557": ReasonData.toString("") + ReasonDataOther,
+      "entry.857702557": ReasonData.join(", ") + ReasonDataOther,
     };
 
     let dataEntryParams = new URLSearchParams(dataEntry);
