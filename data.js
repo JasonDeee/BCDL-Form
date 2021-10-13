@@ -7,6 +7,7 @@ const submit_button = document.querySelector("#submit_button");
 const loading = document.querySelector("#loading ");
 // Entries Holder
 
+const Gender = document.querySelector("#Gender");
 const studentYear = document.querySelector("#studentYear");
 const locations = document.querySelector("#locations");
 const locationsOther = document.querySelector(
@@ -37,7 +38,8 @@ const ReasonOther = document.querySelector(
 );
 
 // Entries Data Block
-var studentData = "",
+var GenderData = "",
+  studentData = "",
   locationsData = "",
   locationsDataOther = "",
   regularData = "",
@@ -57,6 +59,14 @@ var studentData = "",
   ReasonDataOther = "";
 
 // Event Listener
+Gender.addEventListener("click", (e) => {
+  GenderData = document.querySelector(
+    '#Gender input[name="Gender"]:checked'
+  ).value;
+
+  console.log(GenderData);
+});
+// Gender
 studentYear.addEventListener("click", (e) => {
   studentData = document.querySelector(
     '#studentYear input[name="studentYear"]:checked'
@@ -64,6 +74,7 @@ studentYear.addEventListener("click", (e) => {
 
   console.log(studentData);
 });
+
 //
 
 locations.addEventListener("click", (e) => {
@@ -267,6 +278,7 @@ submit_button.addEventListener(
       "entry.851285011": MoneyPaData,
       "entry.830879642": HowSafeData,
       "entry.857702557": ReasonData.join(", ") + ReasonDataOther,
+      "entry.599384502": GenderData,
     };
 
     let dataEntryParams = new URLSearchParams(dataEntry);
