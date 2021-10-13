@@ -254,7 +254,7 @@ select option {
     background-size: cover;
     background-position: center;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
   }
   .background img {
     opacity: 0;
