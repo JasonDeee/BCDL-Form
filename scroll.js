@@ -66,9 +66,7 @@ function render() {
 
     main.style.transform = `translateY(-${dy}px)`;
   } else if (window.innerWidth < 768) {
-    background.style.transform = `translateY(-${
-      (20 * dy) / main.clientHeight
-    }%)`;
+    background.style = ``;
     main.style = ``;
   }
 

@@ -28,8 +28,13 @@
   background: #151515;
 }
 
+head {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 html {
-  max-width: 100vw;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -41,9 +46,6 @@ body {
 .background {
   position: fixed;
   top: 0;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -243,6 +245,19 @@ select option {
 @media screen and (max-width: 768px) {
   #main_scroll {
     position: absolute;
+  }
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("https://www.angelahopperphotography.com/wp-content/uploads/2019/03/Food-Photography-16.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .background img {
+    opacity: 0;
   }
   .row,
   .col {
