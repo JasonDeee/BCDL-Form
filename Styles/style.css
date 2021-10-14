@@ -489,7 +489,7 @@ input:valid {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 77vw;
-    gap: 20px;
+    gap: 40px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;

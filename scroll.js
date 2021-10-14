@@ -60,16 +60,13 @@ function render() {
   dy = Math.floor(dy * 100) / 100;
 
   if (window.innerWidth > 768) {
-    background.style.transform = `translateY(-${
-      (75 * dy) / main.clientHeight
-    }%)`;
+    background.style.transform = `translateY(-${dy / 6}px)`;
 
     main.style.transform = `translateY(-${dy}px)`;
   } else if (window.innerWidth < 768) {
     //
-    background.style.transform = `translateY(-${
-      (22 * dy) / main.clientHeight
-    }%)`;
+    background.style.transform = `translateY(-${dy / 40}px)`;
+
     main.style = ``;
   }
 
