@@ -122,9 +122,11 @@ regularlyOther.addEventListener("focusin", (e) => {
 });
 
 regularlyOther.addEventListener("change", (e) => {
-  regularDataOther = document.querySelector(
-    '#regularly input[type="text"][name="regularly"]:valid'
-  ).value;
+  regularDataOther =
+    " " +
+    document.querySelector(
+      '#regularly input[type="text"][name="regularly"]:valid'
+    ).value;
   console.log(regularDataOther);
 });
 
@@ -175,9 +177,11 @@ howIsFoodOther.addEventListener("focusin", (e) => {
 });
 
 howIsFoodOther.addEventListener("change", (e) => {
-  howIsFoDataOther = document.querySelector(
-    '#howIsFood input[type="text"][name="howIsFood"]:valid'
-  ).value;
+  howIsFoDataOther =
+    " " +
+    document.querySelector(
+      '#howIsFood input[type="text"][name="howIsFood"]:valid'
+    ).value;
   console.log(howIsFoDataOther);
 });
 
