@@ -271,7 +271,7 @@ submit_button.addEventListener(
     let dataEntry = {
       "entry.789328724": studentData,
       "entry.1421145170": locationsData + locationsDataOther,
-      "entry.2023848338": regularData + ReasonDataOther,
+      "entry.2023848338": regularData + regularDataOther,
       "entry.1544109005": self_seData,
       "entry.1574580861": feedtimData,
       "entry.2118881343": howlongData,
