@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: "Lexend", sans-serif;
+  //   font-family: 'Barlow Condensed', sans-serif;
+  transition: none;
+}
+
+@font-face {
+  font-family: "Crocante";
+  src: url(../Fonts/iCielCrocante.otf);
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  transition: width 0.5s ease-out;
+  transform: translateX(5px);
+}
+::-webkit-scrollbar:hover {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #e9e7e756;
+}
+::-webkit-scrollbar-thumb {
+  background: #151515;
+}
+
+::selection {
+  background: #292929;
+  color: #e9e7e7;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+p {
+  font-size: 1.24vw;
+  font-weight: 400;
+}
+#main_scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: fit-content;
+}
+section {
+  min-height: 100vh;
+  width: 100vw;
+  .IMG {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.Blured {
+  backdrop-filter: blur(1.11vw);
+  height: 80vh;
+  width: 90vw;
+  background: #ffffff56;
+  border-style: solid;
+  border-color: #ffffff43;
+  border-width: 2px 1px 0px 2px;
+  border-radius: 2vw;
+  position: relative;
+  overflow: hidden;
+}
+.Decor_Cirle {
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+#header {
+  background: #e9e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #cirle1 {
+    background: #eb712e;
+    // filter: blur(5vw);
+    width: 30vw;
+    position: absolute;
+    top: -4vh;
+    left: -8vw;
+  }
+  #cirle2 {
+    background: #fadeaf;
+    filter: blur(10vw);
+    width: 40vw;
+    position: absolute;
+    top: -12vh;
+    right: -8vw;
+  }
+  #cirle3 {
+    background: #eb712e;
+    // filter: blur(5vw);
+    width: 17vw;
+    position: absolute;
+    top: 62vh;
+    left: 13vw;
+  }
+  #Title_Holder {
+    // background: linear-gradient(60deg, #ffffff56, white);
+
+    box-shadow: 2vw 2vw 3vw #00000036;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 5vw;
+    p {
+      max-width: 32%;
+    }
+    h1::before {
+      content: "";
+      height: 3px;
+      width: 7vw;
+      position: absolute;
+      top: -4vh;
+      right: 14vw;
+      background: #292929;
+    }
+    h1 {
+      font-family: "Crocante";
+      //   font-family: "Barlow Condensed", sans-serif;
+
+      color: #292929;
+      font-size: 3.3vw;
+      max-width: 62%;
+      line-height: 4vw;
+      letter-spacing: 3px;
+      position: relative;
+      margin-bottom: 5vh;
+      span {
+        font-size: 1.1vw;
+        line-height: 1.1vw;
+        position: absolute;
+        right: 5vw;
+        text-align: right;
+        bottom: 0;
+        transform: translateY(100%);
+        letter-spacing: 1px;
+        font-weight: 400;
+      }
+    }
+    .Horr_Line {
+      width: 38%;
+    }
+  }
+  #noodle {
+    width: 78vw;
+    height: 100vh;
+    position: absolute;
+    filter: drop-shadow(-2vw 2vw 3vw #00000096);
+    right: -20vw;
+    top: 10vh;
+    background-size: contain;
+    background-image: url("https://ramenokawari.com/wp-content/uploads/2018/02/Ramen-Okawari-Spicy-Miso-Ramen-Riverside-Transparent-Background-1080-x-1080.png");
+  }
+}
+.Horr_Line {
+  height: 1px;
+  background: #292929;
+  margin: 10px 0 10px 0;
+}
+#Sec1 {
+  background: #e9e7e7;
+  padding-bottom: 10vh;
+  padding-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  z-index: -1;
+  color: #292929;
+
+  h2 {
+    margin-top: 5vh;
+    font-size: 3.3vw;
+    font-weight: 700;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    span {
+      color: #eb712e;
+      font-family: "Barlow Condensed", sans-serif;
+    }
+  }
+
+  .Basic_Needs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    width: 24vw;
+    position: relative;
+  }
+
+  .Basic_Needs::before {
+    height: 100%;
+    width: 1px;
+    left: -5px;
+    background: #292929;
+    position: absolute;
+    top: 0;
+    content: "";
+  }
+  .Nees {
+    height: 4vh;
+    position: relative;
+    transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+    width: 0;
+    background: #292929;
+    color: #292929;
+  }
+  .Nees::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    font-size: 1.24vw;
+    font-weight: 400;
+    transform: translateX(100%);
+    white-space: nowrap;
+  }
+
+  #Need5::after {
+    content: "Self-actualization";
+  }
+  #Need4::after {
+    content: "Esteem";
+  }
+  #Need3::after {
+    content: "Love/belonging";
+  }
+  #Need2::after {
+    content: "Safety";
+  }
+  #Need1::after {
+    content: "Physiological";
+  }
+
+  .Basic_Needs_Active {
+    #Need5 {
+      width: 10%;
+    }
+    #Need4 {
+      width: 30%;
+    }
+    #Need3 {
+      width: 50%;
+    }
+    #Need2 {
+      width: 70%;
+    }
+    #Need1 {
+      width: 90%;
+      background: #eb712e;
+      color: #eb712e;
+    }
+  }
+}
+
+#Sec2 {
+  background: bisque;
+}
