@@ -40,18 +40,19 @@ window.addEventListener("resize", (e) => {
 
 //
 // Momentum Scrolling
-
+var CheckerTimer;
 // Scroll Functions
 var ES = window.addEventListener("scroll", () => {
   easeScroll();
-  let CheckerTimer = setTimeout(ScrollChecker, 888);
+  clearTimeout(CheckerTimer);
+  ScrollChecker();
+  //
+  CheckerTimer = setTimeout(ScrollChecker, 888);
 });
 
 function easeScroll() {
   sy = window.pageYOffset;
 }
-
-window.requestAnimationFrame(render);
 
 // Header Animation
 const header = document.querySelector("#header");
@@ -65,7 +66,7 @@ const Need = document.querySelectorAll(".Basic_Needs .Nees");
 
 for (let index = 0; index < Need.length; index++) {
   const element = Need[index];
-  element.style.transition = `all 0.8s ${
+  element.style.transition = `width 0.8s ${
     index * 0.15
   }s cubic-bezier(0.25, 0, 0, 1)`;
   if (index === Need.length - 1) {
@@ -73,15 +74,61 @@ for (let index = 0; index < Need.length; index++) {
   }
 }
 
+// Sec2 Animation
+//
+// Title OnScroll
+const Title = document.querySelector("#Sec2 .Title_Box");
+const Title_Box = document.querySelector("#Sec2 .Title_Box h2");
+
+const Title_Box_ContentArr = Title_Box.innerText.split("");
+Title_Box.innerHTML = ``;
+
+for (let index = 0; index < Title_Box_ContentArr.length; index++) {
+  if (Title_Box_ContentArr[index] == " ") {
+    Title_Box_ContentArr[index] = "&nbsp;";
+  }
+
+  Title_Box.innerHTML += `<span style="transition: all 0.8s ${
+    index / 50
+  }s cubic-bezier(0.25, 0, 0, 1);">${Title_Box_ContentArr[index]}</span>`;
+
+  if (index == Title_Box_ContentArr.length - 1) {
+    break;
+  }
+}
+
+//
+//
+
+//
+
+// Final Function
 const ScrollChecker = () => {
+  // Header Section Checker
   if (header.getBoundingClientRect().bottom <= 300) {
     Basic_Needs.classList.add("Basic_Needs_Active");
   } else if (header.getBoundingClientRect().bottom > window.innerHeight / 2) {
     Basic_Needs.classList.remove("Basic_Needs_Active");
   }
+  //
+  // Sec2 Title Checker
+  if (Title_Box.getBoundingClientRect().top - window.innerHeight <= 0) {
+    Title.classList.add("Title_Box_Active");
+  } else if (
+    Title_Box.getBoundingClientRect().top + window.innerHeight / 3 >
+    0
+  ) {
+    Title.classList = "Title_Box";
+  }
 
+  // Cleat Timer
   clearTimeout(CheckerTimer);
 };
+//
+// linear interpolation Formula
+function li(a, b, n) {
+  return (1 - n) * a + n * b;
+}
 
 function render() {
   //We calculate our container position by linear interpolation method
@@ -93,7 +140,7 @@ function render() {
 
   if (header.getBoundingClientRect().bottom >= 0) {
     noodle.style.transform = `translateY(${
-      -header.getBoundingClientRect().top / 2
+      -header.getBoundingClientRect().top / 1.8
     }px)`;
     cirle1.style.transform = `translateY(${
       -header.getBoundingClientRect().top / 3
@@ -105,7 +152,4 @@ function render() {
 
   window.requestAnimationFrame(render);
 }
-
-function li(a, b, n) {
-  return (1 - n) * a + n * b;
-}
+window.requestAnimationFrame(render);

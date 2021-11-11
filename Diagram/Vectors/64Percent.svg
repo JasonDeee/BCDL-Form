@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680">
+    <defs>
+        <style>
+            .sxt-1,
+            .sxt-2 {
+                fill: none;
+            }
+
+            .sxt-1 {
+                stroke: #662d91;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 30px;
+            }
+        </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path class="sxt-1" d="M598.54,507.39A308.26,308.26,0,0,1,340,648C171,648,32,509,32,340S171,32,340,32" />
+            <rect class="sxt-2" width="680" height="680" />
+        </g>
+    </g>
+</svg>
