@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680">
+    <defs>
+        <style>
+            .svs-1,
+            .svs-2,
+            .svs-3,
+            .svs-4 {
+                fill: none;
+            }
+
+            .svs-1 {
+                stroke: #f7931e;
+            }
+
+            .svs-1,
+            .svs-2,
+            .svs-3 {
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 30px;
+            }
+
+            .svs-2 {
+                stroke: #c1272d;
+            }
+
+            .svs-3 {
+                stroke: #662d91;
+            }
+        </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path class="svs-1" d="M356,32.42a308.15,308.15,0,0,1,201.65,89.65" />
+            <path class="svs-2" d="M584.12,152.19a308,308,0,0,1,13.32,356.89" />
+            <path class="svs-3"
+                d="M570.88,543.85A308.22,308.22,0,0,1,340,648C171,648,32,509,32,340,32,180,156.63,46.88,313.3,33.16" />
+            <rect class="svs-4" width="680" height="680" />
+        </g>
+    </g>
+</svg>

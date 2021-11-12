@@ -29,8 +29,10 @@ function ResetPage() {
 }
 
 window.addEventListener("resize", (e) => {
+  let bodyHeight = main.getBoundingClientRect().height;
+  body.style.height = `${bodyHeight}px`;
+
   var resizetime = setTimeout(() => {
-    let bodyHeight = main.getBoundingClientRect().height;
     body.style.height = `${bodyHeight}px`;
     easeScroll();
 
@@ -96,10 +98,61 @@ for (let index = 0; index < Title_Box_ContentArr.length; index++) {
     break;
   }
 }
+//
+// Sec 3 Scroll Animate
+const sec3 = document.querySelector("#Sec3");
+const sec3Swicth = document.querySelector("#Sec3 .row");
 
+const Sec3_Active = () => {
+  sec3Swicth.classList.remove("sec3Pending");
+};
+const Sec3_DeActive = () => {
+  sec3Swicth.classList = "row sec3Pending";
+};
 //
 //
+// Sec 4 Scroll Animate
+const sec4 = document.querySelector("#Sec4");
+const sec4Swicth = document.querySelector("#Sec4 .row");
 
+const Sec4_Active = () => {
+  sec4Swicth.classList.remove("sec4Pending");
+};
+const Sec4_DeActive = () => {
+  sec4Swicth.classList = "row sec4Pending";
+};
+//
+//
+// Sec 6 Scroll Animate
+const sec6 = document.querySelector("#sec6");
+const sec6Swich = document.querySelector("#sec6 .row");
+const sec6STitle = document.querySelector("#sec6 .row .Content_sec6 h2");
+
+const sec6STitleArr = sec6STitle.innerText.split("");
+sec6STitle.innerHTML = ``;
+
+for (let index = 0; index < sec6STitleArr.length; index++) {
+  let element = sec6STitleArr[index];
+
+  if (element == " ") {
+    element = "&nbsp;";
+  }
+
+  sec6STitle.innerHTML += `<span style="transition: all 0.8s ${
+    index / 10
+  }s cubic-bezier(0.25, 0, 0, 1)">${element}</span>`;
+
+  if (index >= sec6STitleArr.length - 1) {
+    break;
+  }
+}
+
+const Sec6_Active = () => {
+  sec6Swich.classList.remove("sec6Pending");
+};
+const Sec6_DeActive = () => {
+  sec6Swich.classList = "row sec6Pending";
+};
 //
 
 // Final Function
@@ -119,6 +172,29 @@ const ScrollChecker = () => {
     0
   ) {
     Title.classList = "Title_Box";
+  }
+  //
+  // Sec 3 Scroll Animate
+  if (sec3.getBoundingClientRect().top <= window.innerHeight / 3) {
+    Sec3_Active();
+  } else if (sec3.getBoundingClientRect().top > window.innerHeight * 1.3) {
+    Sec3_DeActive();
+  }
+
+  //
+  // Sec 4 Scroll Animate
+  if (sec4.getBoundingClientRect().top <= window.innerHeight / 3) {
+    Sec4_Active();
+  } else if (sec4.getBoundingClientRect().top > window.innerHeight * 1.3) {
+    Sec4_DeActive();
+  }
+
+  //
+  // Sec 6 Scroll Animate
+  if (sec6.getBoundingClientRect().top <= window.innerHeight / 3) {
+    Sec6_Active();
+  } else if (sec6.getBoundingClientRect().top > window.innerHeight * 1.3) {
+    Sec6_DeActive();
   }
 
   // Cleat Timer
