@@ -183,7 +183,7 @@ const ScrollChecker = () => {
 
   //
   // Sec 4 Scroll Animate
-  if (sec4.getBoundingClientRect().top <= window.innerHeight / 3) {
+  if (sec4.getBoundingClientRect().top <= (window.innerHeight * 2) / 3) {
     Sec4_Active();
   } else if (sec4.getBoundingClientRect().top > window.innerHeight * 1.3) {
     Sec4_DeActive();
@@ -191,7 +191,7 @@ const ScrollChecker = () => {
 
   //
   // Sec 6 Scroll Animate
-  if (sec6.getBoundingClientRect().top <= window.innerHeight / 3) {
+  if (sec6.getBoundingClientRect().top <= (window.innerHeight * 2) / 3) {
     Sec6_Active();
   } else if (sec6.getBoundingClientRect().top > window.innerHeight * 1.3) {
     Sec6_DeActive();
