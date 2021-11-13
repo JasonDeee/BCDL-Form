@@ -109,6 +109,24 @@ h3 {
   font-weight: 700;
 }
 
+@-webkit-keyframes FontColorHint {
+  0% {
+    color: #eb712e;
+  }
+  100% {
+    color: #292929;
+  }
+}
+
+@keyframes FontColorHint {
+  0% {
+    color: #eb712e;
+  }
+  100% {
+    color: #292929;
+  }
+}
+
 #Mobile_Warn {
   width: 100vw;
   height: 100vh;
@@ -129,9 +147,9 @@ h3 {
 
 #Mobile_Warn .Cat_Watching {
   background-color: white;
-  background-image: url("../../Images/tenor.gif");
+  background-image: url(../../Images/Social.jpg);
   width: 38vw;
-  aspect-ratio: 1;
+  height: 38vw;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,6 +175,8 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
+  -webkit-backdrop-filter: blur(2vw);
+          backdrop-filter: blur(2vw);
 }
 
 #Mobile_Warn h1 {
@@ -732,6 +752,35 @@ section .IMG {
           transform: translateX(-99%);
 }
 
+#Sec2 #Female .Hints {
+  display: inline-block;
+  position: absolute;
+  left: -5vw;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+  transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+}
+
+#Sec2 #Female .Hints::after {
+  content: "";
+  position: absolute;
+  right: -1.5vw;
+  width: 1vw;
+  height: 1vw;
+  background: white;
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
 #Sec2 #Male {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -850,6 +899,10 @@ section .IMG {
   opacity: 1;
 }
 
+#Sec2 .Female_Focus #Female .Hints {
+  opacity: 0;
+}
+
 #Sec2 .Female_Focus #Male {
   pointer-events: none;
   width: 10vw;
@@ -878,6 +931,10 @@ section .IMG {
   pointer-events: none;
   width: 0vw;
   margin-right: 10vw;
+}
+
+#Sec2 .Male_Focus #Female .Hints {
+  opacity: 0;
 }
 
 #Sec2 .Conclusion {
@@ -1142,6 +1199,11 @@ section .IMG {
   font-weight: 700;
 }
 
+#Sec3 .Blured #Motel_Hints {
+  -webkit-animation: FontColorHint 2s ease-in-out infinite alternate;
+          animation: FontColorHint 2s ease-in-out infinite alternate;
+}
+
 #Sec3 .Blured .after_hover {
   opacity: 0;
   position: absolute;
@@ -1207,6 +1269,17 @@ section .IMG {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+#Sec4 #Decor_Sec4_Top {
+  top: -16vw;
+  background: linear-gradient(60deg, #40e0d0, #ff8c00, #ff0080);
+  width: 25vw;
+  right: -10vw;
+  position: absolute;
+  -webkit-filter: blur(10vw);
+          filter: blur(10vw);
 }
 
 #Sec4 .row {
@@ -1220,6 +1293,7 @@ section .IMG {
   height: 100vh;
   -webkit-transition: all 1s cubic-bezier(0.25, 0, 0, 1);
   transition: all 1s cubic-bezier(0.25, 0, 0, 1);
+  z-index: 2;
 }
 
 #Sec4 .sec4Pending {

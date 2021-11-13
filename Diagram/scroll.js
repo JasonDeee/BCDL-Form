@@ -31,13 +31,15 @@ function ResetPage() {
 window.addEventListener("resize", (e) => {
   let bodyHeight = main.getBoundingClientRect().height;
   body.style.height = `${bodyHeight}px`;
+  easeScroll();
 
   var resizetime = setTimeout(() => {
+    bodyHeight = Math.floor(main.getBoundingClientRect().height);
     body.style.height = `${bodyHeight}px`;
     easeScroll();
 
     clearTimeout(resizetime);
-  }, 1200);
+  }, 1222);
 });
 
 //
@@ -48,6 +50,7 @@ var ES = window.addEventListener("scroll", () => {
   easeScroll();
   clearTimeout(CheckerTimer);
   ScrollChecker();
+
   //
   CheckerTimer = setTimeout(ScrollChecker, 888);
 });

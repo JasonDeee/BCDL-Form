@@ -98,6 +98,15 @@ h3 {
   font-size: 1.24vw;
   font-weight: 700;
 }
+
+@keyframes FontColorHint {
+  0% {
+    color: #eb712e;
+  }
+  100% {
+    color: #292929;
+  }
+}
 #Mobile_Warn {
   width: 100vw;
   height: 100vh;
@@ -111,9 +120,9 @@ h3 {
   .Cat_Watching {
     background-color: white;
 
-    background-image: url("../../Images/tenor.gif");
+    background-image: url(../../Images/Social.jpg);
     width: 38vw;
-    aspect-ratio: 1;
+    height: 38vw;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -128,6 +137,7 @@ h3 {
     align-items: center;
     justify-content: center;
     color: white;
+    backdrop-filter: blur(2vw);
   }
   h1 {
     font-size: 3.6rem;
@@ -553,6 +563,27 @@ section {
     background-position: left;
     transform: translateX(-99%);
   }
+  #Female {
+    .Hints {
+      display: inline-block;
+      position: absolute;
+      left: -5vw;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+    }
+    .Hints::after {
+      content: "";
+      position: absolute;
+      right: -1.5vw;
+      width: 1vw;
+      height: 1vw;
+      background: white;
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+  }
 
   #Male {
     align-items: flex-end;
@@ -654,6 +685,9 @@ section {
       li {
         opacity: 1;
       }
+      .Hints {
+        opacity: 0;
+      }
     }
     #Male {
       pointer-events: none;
@@ -684,6 +718,9 @@ section {
 
       width: 0vw;
       margin-right: 10vw;
+      .Hints {
+        opacity: 0;
+      }
     }
   }
 
@@ -884,6 +921,9 @@ section {
       text-transform: uppercase;
       font-weight: 700;
     }
+    #Motel_Hints {
+      animation: FontColorHint 2s ease-in-out infinite alternate;
+    }
     .after_hover {
       opacity: 0;
       position: absolute;
@@ -939,7 +979,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position: relative;
+  #Decor_Sec4_Top {
+    top: -16vw;
+    background: linear-gradient(60deg, #40e0d0, #ff8c00, #ff0080);
+    width: 25vw;
+    right: -10vw;
+    position: absolute;
+    filter: blur(10vw);
+  }
   .row {
     width: 100vw;
     justify-content: space-between;
@@ -947,6 +995,7 @@ section {
     height: 100vh;
 
     transition: all 1s cubic-bezier(0.25, 0, 0, 1);
+    z-index: 2;
   }
   .sec4Pending {
     width: 46vw;
