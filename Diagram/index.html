@@ -392,9 +392,12 @@
       const Mobile_Warn = document.querySelector("#Mobile_Warn");
       const Mobile_Warn_no = document.querySelector("#main_scroll");
       Mobile_Warn.style = ``;
-      Mobile_Warn_no.style.display = `none`;
+      Mobile_Warn_no.style.opacity = `0`;
+      Mobile_Warn_no.style.pointerEvents = "none";
+      Mobile_Warn_no.style.height = `100vh`;
       document.body.style.height = `100vh`;
       document.body.style.overflow = `hidden`;
+      document.body.style.pointerEvents = "none";
     }
   </script>
 </html>
