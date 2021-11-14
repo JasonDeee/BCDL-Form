@@ -205,17 +205,14 @@ const ScrollChecker = () => {
 
   //
   // Sec 6 Scroll Animate
-  if (sec6.getBoundingClientRect().top <= (window.innerHeight * 2) / 3) {
+  if (sec6.getBoundingClientRect().top <= window.innerHeight / 3) {
     Sec6_Active();
   } else if (sec6.getBoundingClientRect().top > window.innerHeight * 1.3) {
     Sec6_DeActive();
   }
   //
   // Spinner AOS
-  if (
-    Spinner_Section_S.getBoundingClientRect().top <=
-    (window.innerHeight * 2) / 3
-  ) {
+  if (Spinner_Section_S.getBoundingClientRect().top <= window.innerHeight / 2) {
     Spinner_S_Active();
   } else if (
     Spinner_Section_S.getBoundingClientRect().top >

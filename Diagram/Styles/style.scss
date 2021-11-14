@@ -172,6 +172,7 @@ h3 {
   height: fit-content;
 }
 section {
+  margin-top: -1px;
   min-height: 100vh;
   width: 100vw;
   .IMG {
@@ -436,7 +437,23 @@ section {
   justify-content: start;
 
   position: relative;
+  .Intro {
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 
+    color: white;
+
+    padding-right: 5vw;
+    p {
+      max-width: 62vw;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+  }
   .Decor_Layout {
     position: absolute;
     width: 100%;
@@ -445,6 +462,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    pointer-events: none;
   }
   .DecorPic {
     background-position: center;
@@ -862,7 +880,7 @@ section {
     align-items: stretch;
 
     width: 38vw;
-    margin-top: 10vh;
+    margin-top: 3vh;
     gap: 20px;
 
     .Vertical_line {
@@ -1059,6 +1077,9 @@ section {
       max-width: 33vw;
       text-align: center;
     }
+    span {
+      color: #eb712e;
+    }
   }
   #F_year {
     box-shadow: 2vw 2vw 2.5vw #00000026;
@@ -1107,6 +1128,10 @@ section {
       padding: 2vh 4vw 2vh 4vw;
       color: #29292950;
       transition: all 1s cubic-bezier(0.25, 0, 0, 1);
+
+      span {
+        color: #eb712e;
+      }
 
       h3 {
         display: -webkit-box;
@@ -1478,6 +1503,12 @@ section {
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+
+      p {
+        margin-bottom: 5px;
+        max-width: 45vw;
+      }
+
       h2 {
         font-size: 3.3vw;
         font-weight: 700;
@@ -1488,7 +1519,11 @@ section {
           transform-origin: 0 0;
         }
       }
-
+      h5 {
+        margin-top: 5vh;
+        max-width: 38vw;
+        font-size: 1.24vw;
+      }
       ul {
         margin-top: 5vh;
         padding-right: 6vw;
@@ -1529,7 +1564,96 @@ section {
 }
 #Final_Conclusion {
   background: #e9e7e7;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15vh 0 5vh 0;
+
+  .row {
+    width: 100vw;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 5vw 0 5vw;
+    gap: 5vw;
+    min-height: 100px;
+    position: relative;
+    color: #292929;
+    margin-bottom: 3vh;
+
+    .Illus {
+      width: 38%;
+      height: auto;
+      background-size: contain;
+    }
+    .Contents {
+      width: 62%;
+      height: fit-content;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    h2 {
+      width: auto;
+
+      font-size: 3.3vw;
+      font-weight: 700;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  #Comments,
+  #Ideas {
+    text-align: right;
+  }
+
+  #Reasons,
+  #Ideas {
+    text-align: left;
+  }
+  #Reasons {
+    .Illus {
+      background-image: url(../Vectors/ReasonsIllus.svg);
+      background-position: right top;
+      margin-right: -5vw;
+      height: 60vh;
+      margin-bottom: -20vh;
+    }
+  }
+  #Comments {
+    .Illus {
+      background-image: url(../Vectors/CommentIllus.svg);
+      background-position: left bottom;
+      margin-left: -5vw;
+      height: 50vh;
+      margin-top: -10vh;
+    }
+  }
+  #Ideas {
+    .Illus {
+      background-image: url(../Vectors/IdeaIllus.svg);
+      background-position: center bottom;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    li {
+      margin-left: 2vw;
+      margin-bottom: 2px;
+    }
+  }
 }
+
+// The Fuckin Spinner
+
 #Spinner_Section {
   background: #e9e7e7;
   display: flex;
@@ -1537,7 +1661,7 @@ section {
   align-items: center;
   justify-content: center;
   color: #292929;
-
+  margin-top: -1px;
   position: relative;
 
   .Decor_Layout {
@@ -1601,7 +1725,8 @@ section {
     opacity: 0;
     overflow: hidden;
 
-    transition: all 1.2s cubic-bezier(0.25, 0, 0, 1), opacity 0s linear;
+    transition: all 1.2s cubic-bezier(0.25, 0, 0, 1),
+      opacity 0.55s cubic-bezier(0.25, 0, 0, 1);
     h2 {
       font-size: 3.3vw;
       font-weight: 700;
@@ -1646,6 +1771,10 @@ section {
     left: 5vw;
     max-width: 32vw;
     transition: all 1.2s cubic-bezier(0.25, 0, 0, 1);
+
+    p {
+      margin-bottom: 5px;
+    }
 
     h2 {
       font-size: 3.3vw;
@@ -1880,5 +2009,90 @@ section {
         letter-spacing: 0;
       }
     }
+  }
+}
+#Say_Goodbye {
+  background: #e9e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  .Footer {
+    background: #292929;
+    height: 15vh;
+    width: 100%;
+  }
+  .Contents {
+    text-align: center;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .Contents::after {
+    background: #292929;
+    height: 1px;
+    width: 62%;
+    position: absolute;
+    top: 10vh;
+    content: "";
+  }
+  h3,
+  h4,
+  strong {
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    color: #292929;
+    letter-spacing: 0.2vw;
+    line-height: 1.8vw;
+  }
+  h4 {
+    margin-top: 20px;
+    font-weight: 300;
+    color: #656565;
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+  strong {
+    font-weight: 700;
+  }
+  span {
+    color: #656565;
+    padding: 0 5px 0 5px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+
+    margin-top: 5vh;
+    div {
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 7vw;
+      height: 13vh;
+    }
+    .horr_line {
+      height: auto;
+      width: 1px;
+      background: #292929;
+    }
+  }
+  #VDFM {
+    background-image: url(../Vectors/GrSix.svg);
+  }
+  #MAD_THC {
+    background-image: url(../Vectors/Grazie.svg);
   }
 }

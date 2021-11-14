@@ -227,6 +227,7 @@ h3 {
 }
 
 section {
+  margin-top: -1px;
   min-height: 100vh;
   width: 100vw;
 }
@@ -581,6 +582,32 @@ section .IMG {
   padding-bottom: 10vh;
 }
 
+#Sec2 .Intro {
+  width: 100%;
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding-right: 5vw;
+}
+
+#Sec2 .Intro p {
+  max-width: 62vw;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
 #Sec2 .Decor_Layout {
   position: absolute;
   width: 100%;
@@ -594,6 +621,7 @@ section .IMG {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  pointer-events: none;
 }
 
 #Sec2 .DecorPic {
@@ -1121,7 +1149,7 @@ section .IMG {
       -ms-flex-align: stretch;
           align-items: stretch;
   width: 38vw;
-  margin-top: 10vh;
+  margin-top: 3vh;
   gap: 20px;
 }
 
@@ -1388,6 +1416,10 @@ section .IMG {
   text-align: center;
 }
 
+#Sec4 .Center span {
+  color: #eb712e;
+}
+
 #Sec4 #F_year {
   -webkit-box-shadow: 2vw 2vw 2.5vw #00000026;
           box-shadow: 2vw 2vw 2.5vw #00000026;
@@ -1462,6 +1494,10 @@ section .IMG {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#Sec4 .Blured .Blured_Inside span {
+  color: #eb712e;
 }
 
 #Sec4 .Blured .Blured_Inside h3 {
@@ -1964,6 +2000,11 @@ section .IMG {
           justify-content: center;
 }
 
+#sec6 .row .Content_sec6 p {
+  margin-bottom: 5px;
+  max-width: 45vw;
+}
+
 #sec6 .row .Content_sec6 h2 {
   font-size: 3.3vw;
   font-weight: 700;
@@ -1975,6 +2016,12 @@ section .IMG {
   display: inline-block;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
+}
+
+#sec6 .row .Content_sec6 h5 {
+  margin-top: 5vh;
+  max-width: 38vw;
+  font-size: 1.24vw;
 }
 
 #sec6 .row .Content_sec6 ul {
@@ -2018,6 +2065,115 @@ section .IMG {
 
 #Final_Conclusion {
   background: #e9e7e7;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15vh 0 5vh 0;
+}
+
+#Final_Conclusion .row {
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 0 5vw 0 5vw;
+  gap: 5vw;
+  min-height: 100px;
+  position: relative;
+  color: #292929;
+  margin-bottom: 3vh;
+}
+
+#Final_Conclusion .row .Illus {
+  width: 38%;
+  height: auto;
+  background-size: contain;
+}
+
+#Final_Conclusion .row .Contents {
+  width: 62%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#Final_Conclusion .row h2 {
+  width: auto;
+  font-size: 3.3vw;
+  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+#Final_Conclusion .row li {
+  margin-bottom: 10px;
+}
+
+#Final_Conclusion #Comments,
+#Final_Conclusion #Ideas {
+  text-align: right;
+}
+
+#Final_Conclusion #Reasons,
+#Final_Conclusion #Ideas {
+  text-align: left;
+}
+
+#Final_Conclusion #Reasons .Illus {
+  background-image: url(../Vectors/ReasonsIllus.svg);
+  background-position: right top;
+  margin-right: -5vw;
+  height: 60vh;
+  margin-bottom: -20vh;
+}
+
+#Final_Conclusion #Comments .Illus {
+  background-image: url(../Vectors/CommentIllus.svg);
+  background-position: left bottom;
+  margin-left: -5vw;
+  height: 50vh;
+  margin-top: -10vh;
+}
+
+#Final_Conclusion #Ideas .Illus {
+  background-image: url(../Vectors/IdeaIllus.svg);
+  background-position: center bottom;
+}
+
+#Final_Conclusion #Ideas p {
+  margin-bottom: 10px;
+}
+
+#Final_Conclusion #Ideas li {
+  margin-left: 2vw;
+  margin-bottom: 2px;
 }
 
 #Spinner_Section {
@@ -2036,6 +2192,7 @@ section .IMG {
       -ms-flex-pack: center;
           justify-content: center;
   color: #292929;
+  margin-top: -1px;
   position: relative;
 }
 
@@ -2122,8 +2279,8 @@ section .IMG {
   padding: 0;
   opacity: 0;
   overflow: hidden;
-  -webkit-transition: all 1.2s cubic-bezier(0.25, 0, 0, 1), opacity 0s linear;
-  transition: all 1.2s cubic-bezier(0.25, 0, 0, 1), opacity 0s linear;
+  -webkit-transition: all 1.2s cubic-bezier(0.25, 0, 0, 1), opacity 0.55s cubic-bezier(0.25, 0, 0, 1);
+  transition: all 1.2s cubic-bezier(0.25, 0, 0, 1), opacity 0.55s cubic-bezier(0.25, 0, 0, 1);
 }
 
 #Spinner_Section .Spinner_Result h2 {
@@ -2184,6 +2341,10 @@ section .IMG {
   max-width: 32vw;
   -webkit-transition: all 1.2s cubic-bezier(0.25, 0, 0, 1);
   transition: all 1.2s cubic-bezier(0.25, 0, 0, 1);
+}
+
+#Spinner_Section .Spinner_Title p {
+  margin-bottom: 5px;
 }
 
 #Spinner_Section .Spinner_Title h2 {
@@ -2507,5 +2668,130 @@ section .IMG {
 
 #Spinner_Section .Spinner_Final .Spinner_Result h2 {
   letter-spacing: 0;
+}
+
+#Say_Goodbye {
+  background: #e9e7e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+#Say_Goodbye .Footer {
+  background: #292929;
+  height: 15vh;
+  width: 100%;
+}
+
+#Say_Goodbye .Contents {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#Say_Goodbye .Contents::after {
+  background: #292929;
+  height: 1px;
+  width: 62%;
+  position: absolute;
+  top: 10vh;
+  content: "";
+}
+
+#Say_Goodbye h3,
+#Say_Goodbye h4,
+#Say_Goodbye strong {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1vw;
+  color: #292929;
+  letter-spacing: 0.2vw;
+  line-height: 1.8vw;
+}
+
+#Say_Goodbye h4 {
+  margin-top: 20px;
+  font-weight: 300;
+  color: #656565;
+}
+
+#Say_Goodbye h3 {
+  font-weight: 500;
+}
+
+#Say_Goodbye strong {
+  font-weight: 700;
+}
+
+#Say_Goodbye span {
+  color: #656565;
+  padding: 0 5px 0 5px;
+}
+
+#Say_Goodbye .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  position: relative;
+  margin-top: 5vh;
+}
+
+#Say_Goodbye .logo div {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 7vw;
+  height: 13vh;
+}
+
+#Say_Goodbye .logo .horr_line {
+  height: auto;
+  width: 1px;
+  background: #292929;
+}
+
+#Say_Goodbye #VDFM {
+  background-image: url(../Vectors/GrSix.svg);
+}
+
+#Say_Goodbye #MAD_THC {
+  background-image: url(../Vectors/Grazie.svg);
 }
 /*# sourceMappingURL=style.css.map */

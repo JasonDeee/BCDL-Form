@@ -134,17 +134,20 @@ const RewardSelect = () => {
     switch (IndexResult) {
       case 0:
       case 1:
-      case 2:
+      case 5:
         // code block
-        Result_Board_h5.textContent = `Ấu Yềah, một mẹo để nấu, bí mật nhé!`;
-
+        Result_Board_h5.textContent = `Ấu Yềah, một công thức, thật ngon miệng nhé!`;
+        Spinner_Ico[IndexResult].style.transform = `rotate(180deg)`;
         //
         break;
       case 4:
       case 3:
-      case 5:
+      case 2:
         // code block
-        Result_Board_h5.textContent = `Ấu Yềah, một công thức, thật ngon miệng nhé!`;
+        Spinner_Ico[IndexResult].style.transform = `rotate(0)`;
+
+        Result_Board_h5.textContent = `Ấu Yềah, một mẹo để nấu, bí mật nhé!`;
+
         break;
       default:
         Result_Board_h5.textContent = ``;
