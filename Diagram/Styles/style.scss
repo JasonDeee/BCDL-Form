@@ -78,7 +78,9 @@ body {
 }
 
 p,
-div {
+div,
+li,
+ul {
   font-size: 1.24vw;
   font-weight: 400;
   background-repeat: no-repeat;
@@ -107,6 +109,16 @@ h3 {
     color: #292929;
   }
 }
+
+@keyframes HintsPolygon {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1vw);
+  }
+}
+
 #Mobile_Warn {
   width: 100vw;
   height: 100vh;
@@ -392,6 +404,7 @@ section {
   }
   #Need1::after {
     content: "Sinh học";
+    transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
   }
 
   .Basic_Needs_Active {
@@ -569,10 +582,14 @@ section {
       position: absolute;
       left: -5vw;
       color: white;
+      font-size: 1vw;
+      font-weight: 300;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+
+      animation: HintsPolygon 1s ease-in-out infinite alternate;
     }
     .Hints::after {
       content: "";
@@ -1507,6 +1524,361 @@ section {
 
     .svs-3 {
       stroke: #eb712e00;
+    }
+  }
+}
+#Final_Conclusion {
+  background: #e9e7e7;
+}
+#Spinner_Section {
+  background: #e9e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #292929;
+
+  position: relative;
+
+  .Decor_Layout {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+    .Decor_Cirle {
+      background: #eb712e;
+      transition: all 0.15s ease-out;
+    }
+    #SpinnerC1 {
+      margin-bottom: 5vh;
+      width: 5vw;
+      margin-right: 5vw;
+    }
+    #SpinnerC2 {
+      width: 13vw;
+      margin-left: 11vw;
+    }
+    #SpinnerC3 {
+      margin-top: -5vh;
+      width: 25vw;
+      margin-right: 35vw;
+    }
+  }
+  .BackGround_Picture {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    clip-path: circle(100% at 50% 65%);
+    pointer-events: none;
+    transition: all 0.8s cubic-bezier(0.25, 0, 0, 1), opacity 1.3s ease-out;
+    background-image: url("https://www.thespruceeats.com/thmb/IjB6LcyBm8TeIZIOl0eotpFl4aU=/2121x1414/filters:fill(auto,1)/GettyImages-146917368-e6c9920bb9094be495565cee35aa15a1.jpg");
+  }
+  // .BackGround_Picture::after {
+  //   position: absolute;
+  //   width: inherit;
+  //   height: inherit;
+  //   content: "";
+  //   background: #00000056;
+  // }
+  .Blured {
+    box-shadow: 1vw 2vw 2.5vw #00000000;
+  }
+  .Spinner_Result {
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    box-shadow: 1vw 2vw 1vw #00000000;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    transition: all 1.2s cubic-bezier(0.25, 0, 0, 1), opacity 0s linear;
+    h2 {
+      font-size: 3.3vw;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: "Barlow Condensed", sans-serif;
+      white-space: nowrap;
+      letter-spacing: 30px;
+      transition: all 1.5s cubic-bezier(0.25, 0, 0, 1);
+    }
+    h5 {
+      font-size: 1.1vw;
+      font-weight: 600;
+      color: #656565;
+      margin-bottom: 5px;
+    }
+
+    .Horr_Line {
+      width: 7vw;
+      height: 3px;
+      margin-bottom: 5vh;
+    }
+    ul {
+      max-width: 38vw;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .Spinner_Main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Spinner_Title {
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    max-width: 32vw;
+    transition: all 1.2s cubic-bezier(0.25, 0, 0, 1);
+
+    h2 {
+      font-size: 3.3vw;
+      font-weight: 700;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+    }
+    .Horr_Line {
+      height: 3px;
+      width: 7vw;
+    }
+  }
+  .row {
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 0 5vw 0 5vw;
+    #Spinner_Circle {
+      height: 62vh;
+      width: auto;
+      border-radius: 50%;
+      aspect-ratio: 1;
+      position: relative;
+      box-shadow: 1vw 5vw 2.5vw #00000026;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 38vw;
+    transition: all 1.2s cubic-bezier(0.25, 0, 0, 1);
+  }
+
+  #Spin_But,
+  #Spin_But2 {
+    margin-top: 20px;
+    background: #292929;
+    color: #e9e7e7;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.23vw;
+    font-weight: 600;
+    padding: 10px 25px 10px 25px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    transition: all 0.55s cubic-bezier(0.25, 0, 0, 1);
+  }
+  #Spin_But2 {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+  #Spin_But::after,
+  #Spin_But2::after {
+    height: 200%;
+    width: 10px;
+    transition: all 0.55s cubic-bezier(0.25, 0, 0, 1);
+
+    content: "";
+    background: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -25px;
+    margin: auto;
+    filter: blur(5px);
+    transform: rotate(15deg);
+  }
+  #Spin_But:hover,
+  #Spin_But2:hover {
+    letter-spacing: 3px;
+    opacity: 1;
+  }
+  #Spin_But:hover::after,
+  #Spin_But2:hover::after {
+    left: 150%;
+  }
+
+  .Line_Group,
+  .Icons_Group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 7s cubic-bezier(0.25, 0, 0, 1);
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #Spinner_Circle::before,
+  #Spinner_Circle::after {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    aspect-ratio: 1;
+    // border: solid 1px #292929;
+  }
+  #Spinner_Circle::before {
+    background: #292929;
+    height: 34%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../Vectors/Help.svg);
+  }
+  #Spinner_Circle::after {
+    height: 36%;
+    border: solid 1px #292929;
+  }
+  .The_line {
+    width: 1px;
+    height: 92%;
+    position: absolute;
+  }
+  .The_line::after,
+  .The_line::before {
+    background: #353535;
+    position: absolute;
+    width: 1px;
+    height: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    content: "";
+  }
+  .The_line::before {
+    top: 0;
+  }
+  .The_line::after {
+    bottom: 0;
+  }
+  .The_Icon_Col {
+    position: absolute;
+    height: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 0 3vh 0;
+  }
+  .The_Ico {
+    width: 100%;
+    aspect-ratio: 1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../Vectors/Ques.svg);
+  }
+  #Line1 {
+    transform: rotate(30deg);
+
+    transition: all 0.8s cubic-bezier(0.25, 0, 0, 1);
+  }
+  #Line2 {
+    transform: rotate(90deg);
+    transition: all 0.8s 0.2s cubic-bezier(0.25, 0, 0, 1);
+  }
+  #Line3 {
+    transform: rotate(150deg);
+    transition: all 0.8s 0.4s cubic-bezier(0.25, 0, 0, 1);
+  }
+  #Ico1 {
+    transform: rotate(0);
+    transition: all 0.8s 0.4s cubic-bezier(0.25, 0, 0, 1);
+  }
+  #Ico2 {
+    transform: rotate(60deg);
+    transition: all 0.8s 0.6s cubic-bezier(0.25, 0, 0, 1);
+  }
+  #Ico3 {
+    transform: rotate(-60deg);
+    transition: all 0.8s 0.8s cubic-bezier(0.25, 0, 0, 1);
+  }
+  .Spinner_pending {
+    #Line1,
+    #Line2,
+    #Line3 {
+      opacity: 0;
+      transform: rotate(0);
+    }
+    .The_Icon_Col {
+      width: 0;
+    }
+  }
+  .Spinner_Spinning,
+  .Spinner_Final {
+    .Spinner_Title {
+      left: -5vw;
+      opacity: 0;
+      pointer-events: none;
+    }
+    #Spin_But {
+      color: transparent;
+      padding: 5px 0 5px 0;
+      clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
+      pointer-events: none;
+    }
+    .column {
+      margin-left: 0;
+    }
+  }
+  .Spinner_Final {
+    .row {
+      gap: 5vw;
+    }
+    #Spin_But2 {
+      pointer-events: all;
+    }
+    .BackGround_Picture {
+      opacity: 1;
+      clip-path: circle(48% at 110% -5%);
+    }
+    .Spinner_Result {
+      opacity: 1;
+
+      width: 62%;
+      padding: 40px;
+      box-shadow: 1vw 2vw 2.5vw #00000026;
+      h2 {
+        letter-spacing: 0;
+      }
     }
   }
 }

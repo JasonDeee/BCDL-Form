@@ -157,6 +157,17 @@ const Sec6_DeActive = () => {
   sec6Swich.classList = "row sec6Pending";
 };
 //
+//
+// Spinner AOS
+const Spinner_Section_S = document.querySelector("#Spinner_Section");
+const Spinner_Main = document.querySelector("#Spinner_Section .Spinner_Main");
+
+const Spinner_S_Active = () => {
+  Spinner_Main.classList.remove("Spinner_pending");
+};
+const Spinner_S_DeActive = () => {
+  Spinner_Main.classList.add("Spinner_pending");
+};
 
 // Final Function
 const ScrollChecker = () => {
@@ -198,6 +209,19 @@ const ScrollChecker = () => {
     Sec6_Active();
   } else if (sec6.getBoundingClientRect().top > window.innerHeight * 1.3) {
     Sec6_DeActive();
+  }
+  //
+  // Spinner AOS
+  if (
+    Spinner_Section_S.getBoundingClientRect().top <=
+    (window.innerHeight * 2) / 3
+  ) {
+    Spinner_S_Active();
+  } else if (
+    Spinner_Section_S.getBoundingClientRect().top >
+    window.innerHeight * 1.3
+  ) {
+    Spinner_S_DeActive();
   }
 
   // Cleat Timer

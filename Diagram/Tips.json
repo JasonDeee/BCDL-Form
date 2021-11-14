@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Với món luộc",
+    "Icon": "Boil.svg",
+    "Description": [
+      "Hạn chế dầu mỡ và giữ nguyên được các chất dinh dưỡng có trong rau/củ, tăng chất chống oxy lại dễ chế biến lắm luôn nhé",
+      "Là giải pháp cứu cánh cho các bạn sinh viên ngại nấu nướng."
+    ]
+  },
+  {
+    "name": "Món nướng - với than, củi",
+    "Icon": "OldGrill.svg",
+    "Description": [
+      "Đúng món yêu thích của các bạn sinh viên nhà mình đây rồi.",
+      "Nhưng hãy cẩn thận. Than sản sinh ra nhiều khí độc, có thể gây ra các bệnh về hô hấp, vỉ nướng được làm từ kim loại như nhôm, sắt... ở nhiệt độ cao sẽ ảnh hưởng đến sức khỏe gây nguy cơ lão hóa sớm và mắc một số bệnh về xương khớp, tim mạch. Bạn bè tụ tập ăn 1 bữa thì ok nhé."
+    ]
+  },
+  {
+    "name": "Món nướng - với thiết bị điện",
+    "Icon": "NewGrill.svg",
+    "Description": [
+      "Đúng món yêu thích của các bạn sinh viên nhà mình đây rồi.",
+      "Căn chỉnh thời gian nướng hợp lý. Sóng Viba khiến thực phẩm bị chuyển hóa thành AGE - một loại hợp chất glycate gây lão hóa da nhanh chóng và không hề yêu thương hệ tim mạch."
+    ]
+  },
+  {
+    "name": "Món hấp",
+    "Icon": "Bake.svg",
+    "Description": [
+      "Tuyệt vời - Cách chế biến giúp bạn tiết kiệm mọi thứ chính là đây.",
+      "Tiết kiệm thời gian, chuẩn bị đơn giản, và đặc biệt là tiết kiệm dưỡng chất, màu sắc, mùi vị của thực phẩm."
+    ]
+  },
+  {
+    "name": "Món chiên",
+    "Icon": "Oilded.svg",
+    "Description": [
+      "Đây có lẽ là cách chế biến tuyệt vời cho các món ăn vặt mà các bạn vẫn thưởng thức ngoài cổng trường.",
+      "Tuy nhiên, ăn thực phẩm chiên rán có thể góp phần làm tăng huyết áp, giảm cholesterol HDL tốt và gây béo phì, có nguy cơ mắc bệnh tiểu đường loại 2 cao hơn những người dùng đồ chiên rán 1-3 lần/ tháng."
+    ]
+  },
+  {
+    "name": "Món rang/áp chảo",
+    "Icon": "Saute.svg",
+    "Description": [
+      "Nếu bạn muốn ăn uống healthy, ít hoặc không dầu mỡ nhưng lại chán các món luộc có phần hơi nhạt nhẽo thì xin chúc mừng. Hai cách chế biến này vừa có thể cải thiện sự hấp thu các vitamin tan trong dầu vừa giữ được lượng nước và hương vị của món ăn.",
+      "Nhưng trong một vài trường hợp nó vẫn có thể làm giảm vitamin C có trong rau xanh."
+    ]
+  },
+  {
+    "name": "Món xào",
+    "Icon": "Fry.svg",
+    "Description": [
+      "Phần lớn sinh viên PTIT tham gia khảo sát yêu thích cách chế biến này.",
+      "Đây là một trong những cách chế biến áp dụng được cho hầu hết các loại thực phẩm, lượng dầu mỡ sử dụng vừa đủ, hương vị đậm đà. Mỗi tội khâu chuẩn bị khá &quot;tốn cơm&quot;."
+    ]
+  },
+  {
+    "name": "Món nấu",
+    "Icon": "NormalCook.svg",
+    "Description": [
+      "Cách chế biến này là sự lựa chọn siêu tuyệt vời cho các bạn sinh viên bận rộn nhưng vẫn muốn ăn uống đủ chất.",
+      "Không chỉ sử dụng ít dầu, mỡ mà các món nấu có thể kết hợp cùng lúc rất nhiều các loại rau, củ, quả, thịt với nhau chỉ với 1 cái nồi. Quá là tiện lợi luôn!"
+    ]
+  },
+  {
+    "name": "Món hầm",
+    "Icon": "BakeNBoil.svg",
+    "Description": [
+      "Không nói nhiều nữa, tắt máy và đi chuẩn bị ngay đi!",
+      "Hầm là cách chế biến rất tốn thời gian, dưỡng chất sẽ được chuyển sang nước dùng rất nhiều. Tuy nhiên, đổi lại thì nước dùng ấy rất đậm đà, và nếu các sinh viên PTIT đã đam mê thì chúng mình không cản được."
+    ]
+  },
+  {
+    "name": "Salad/Rau củ tươi",
+    "Icon": "Fresh.svg",
+    "Description": [
+      "Không dầu mỡ, không làm mất chất dinh dưỡng , không làm thay đổi hương vị, giúp giảm cân, đẹp da, đẹp dáng, thanh lọc cơ thể.",
+      "Tuy nhiên, bạn có biết, các món ăn chế biến theo cách này thì tỷ lệ nhiễm ký sinh trùng siêu cao lên đến 92% đối với các loại rau sống chúng ta ăn hàng ngày như xà lách, rau thơm, cải cúc, rau muống, thậm chí dù được rửa sạch đến 3 lần nước thì tỷ lệ này chỉ giảm xuống 20 - 30%. Nên cân nhắc nhé."
+    ]
+  }
+]

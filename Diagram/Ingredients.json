@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Mì kim chi chua cay",
+    "Icon": "Noodle.svg",
+    "Description": [
+      "Mì tôm để vừa ngon vừa không gây hại cho sức khỏe thì các bạn chỉ cần thêm một rau rau xanh, các loại thịt/trứng và nhớ trần mì trước dùng là ok ngay nhé.",
+      "Đủ dinh dưỡng và kết hợp được rất nhiều hương vị trong cùng 1 bữa ăn."
+    ]
+  },
+  {
+    "name": "Nem chua rán",
+    "Icon": "FryRolls.svg",
+    "Description": [
+      "Thật sự là rất ngon đấy.",
+      "Nhớ lưu ý chọn loại dầu chiên: không sử dụng lại dầu thừa đã được chiên, dầu thực vật sẽ giữ nguyên vị chua, chất béo động vật cũng giữ được vị chua nhưng sẽ có thêm cảm giác béo."
+    ]
+  },
+  {
+    "name": "Bí đỏ hấp thịt băm",
+    "Icon": "RedPumpkin.svg",
+    "Description": [
+      "Món ăn bổ dưỡng, lạ miệng và cực đáng để các thử luông :)",
+      "Các nguyên liệu gồm có: thịt lợn/bò băm, cà rốt, hành lá, hành khô được xào xơ qua. Cho tất cả vào bên trong quả bí đỏ đã bỏ ruột. Hấp cách thủy từ 25-30p là cho ra thành phẩm siêu ngon lại được chế biến theo cách giữ tối đa độ ngọt của thực phẩm."
+    ]
+  },
+  {
+    "name": "Salad bắp cải",
+    "Icon": "Salad.svg",
+    "Description": [
+      "Bạn nào đang giảm cân, muốn thanh lọc cơ thể thì chọn ngay món này luôn nhé.",
+      "Tuy nhiên, đối với những món salad cần rửa rau nhiều lần, ngâm với muối loãng và rửa lại bằng nước sạch trước khi ăn. Muốn ăn ngon lại khỏe mạnh thì cứ phải từ từ."
+    ]
+  },
+  {
+    "name": "Thịt nướng",
+    "Icon": "Steak.svg",
+    "Description": [
+      "Tụ tập thêm vào ngươi bạn và lăn vào bếp với món ăn không thể thiếu mỗi dịp đặc biệt này.",
+      "Để món nướng vừa đậm đà vừa ít độc hại thì nhiều bạn vẫn chưa biết nên làm thế nào đâu nha. Thịt nên được tẩm ướp bằng các loại sốt bởi lớp dịch lỏng của nước xốt bao phủ thịt sẽ làm giảm lượng mỡ chảy xuống, do đó hạn chế phát sinh các chất độc. Xốt càng đặc càng có hiệu quả cao."
+    ]
+  }
+]

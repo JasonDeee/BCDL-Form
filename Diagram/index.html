@@ -1,3 +1,24 @@
+<!-- 
+          -------------------
+          █░█ █▀▀ █░░ █░░ █▀█
+          █▀█ ██▄ █▄▄ █▄▄ █▄█
+          -------------------
+          
+        ▒█▀▀▀ ▒█▀▀█ ▒█▀▀▀█ ▒█▀▄▀█ 
+        ▒█▀▀▀ ▒█▄▄▀ ▒█░░▒█ ▒█▒█▒█ 
+        ▒█░░░ ▒█░▒█ ▒█▄▄▄█ ▒█░░▒█
+        -------------------------
+
+███╗░░██╗██╗░░██╗░█████╗░███╗░░░███╗  ░█████╗░
+████╗░██║██║░░██║██╔══██╗████╗░████║  ██╔═══╝░
+██╔██╗██║███████║██║░░██║██╔████╔██║  ██████╗░
+██║╚████║██╔══██║██║░░██║██║╚██╔╝██║  ██╔══██╗
+██║░╚███║██║░░██║╚█████╔╝██║░╚═╝░██║  ╚█████╔╝
+╚═╝░░╚══╝╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝  ░╚════╝░
+
+🅱🅰🅾 🅲🅷🅸 🅳🆄 🅻🅸🅴🆄 - 🅓➊➑
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -53,9 +74,12 @@
           quan trọng. Trong đó,
           <span>Nhu cầu Sinh học được cho là quan trọng nhất</span> và vậy chúng
           phải được đáp ứng trước tiên. <br />
-          Cha ông ta từ xưa cũng đã có câu: “Có thực mới vực được đạo”, cần phải
-          được ăn uống, đáp ứng nhu cầu cơ bản để có thể hoạt động, vươn tới nhu
-          cầu cao hơn. <br />
+          <samp style="width: 50vw; display: inline-block"
+            >Cha ông ta từ xưa cũng đã có câu: “Có thực mới vực được đạo”, cần
+            phải ăn uống, đáp ứng nhu cầu cơ bản để có thể hoạt động, vươn tới
+            nhu cầu cao hơn.
+          </samp>
+          <br />
           Tại PTIT, sinh viên có những thói quen ăn uống của riêng họ. Họ có
           lịch trình riêng, sở thích riêng và cách chế biến riêng.
           <br />
@@ -358,6 +382,60 @@
           </div>
         </div>
       </section>
+      <section id="Final_Conclusion"></section>
+      <section id="Spinner_Section">
+        <div class="Decor_Layout">
+          <div class="Decor_Cirle" id="SpinnerC1"></div>
+          <div class="Decor_Cirle" id="SpinnerC2"></div>
+          <div class="Decor_Cirle" id="SpinnerC3"></div>
+        </div>
+        <div class="Spinner_Main Spinner_pending">
+          <div class="Spinner_Title">
+            <div class="Horr_Line"></div>
+            <h2>Cuối cùng</h2>
+            <p>
+              Nếu bạn vẫn chưa quyết định được nấu gì hôm nay, thì hãy để nhóm 6
+              gợi ý một trong số 6 công thức và lưu ý chế biến sau đây. Hãy cứ
+              yên tâm là chúng sẽ "chuẩn khoa học" nhé!
+            </p>
+          </div>
+          <div class="BackGround_Picture"></div>
+          <div class="row">
+            <div class="column">
+              <div class="Blured" id="Spinner_Circle">
+                <div class="Line_Group">
+                  <div class="The_line" id="Line1"></div>
+                  <div class="The_line" id="Line2"></div>
+                  <div class="The_line" id="Line3"></div>
+                </div>
+                <div class="Icons_Group">
+                  <div class="The_Icon_Col" id="Ico1">
+                    <div class="The_Ico" id="Head"></div>
+                    <div class="The_Ico" id="Tail"></div>
+                  </div>
+                  <div class="The_Icon_Col" id="Ico2">
+                    <div class="The_Ico" id="Head"></div>
+                    <div class="The_Ico" id="Tail"></div>
+                  </div>
+                  <div class="The_Icon_Col" id="Ico3">
+                    <div class="The_Ico" id="Head"></div>
+                    <div class="The_Ico" id="Tail"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="Spin_But">Spin Me!</div>
+            </div>
+            <div class="Blured Spinner_Result">
+              <h5>Loading</h5>
+              <h2>Loading</h2>
+              <div class="Horr_Line"></div>
+
+              <ul></ul>
+              <div id="Spin_But2">Thêm lần nữa!</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <main id="Mobile_Warn" style="display: none">
       <div class="Blured">
@@ -382,6 +460,7 @@
   </body>
   <script src="./animation.js"></script>
   <script src="./scroll.js"></script>
+  <script src="./spinner.js"></script>
   <script>
     var isMobile = /iPhone|iPad|iPod|Windows Phone|Android/i.test(
       navigator.userAgent
