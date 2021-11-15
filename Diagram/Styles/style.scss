@@ -581,7 +581,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    width: calc(16vh * 16 / 9);
+    width: calc(62vh * 9 / 16);
     z-index: -1;
   }
   #Female {
@@ -754,7 +754,7 @@ section {
     #Female {
       pointer-events: none;
 
-      width: 0vw;
+      width: 0;
       margin-right: 10vw;
       .Hints {
         opacity: 0;
