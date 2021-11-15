@@ -19,6 +19,7 @@ ResetPage();
 
 window.addEventListener("beforeunload", (e) => {
   ResetPage();
+  ScrollResize();
 });
 
 function ResetPage() {
@@ -28,7 +29,7 @@ function ResetPage() {
   main.style = ``;
 }
 
-window.addEventListener("resize", (e) => {
+function ScrollResize() {
   let bodyHeight = main.getBoundingClientRect().height;
   body.style.height = `${bodyHeight}px`;
   easeScroll();
@@ -40,7 +41,9 @@ window.addEventListener("resize", (e) => {
 
     clearTimeout(resizetime);
   }, 1222);
-});
+}
+ScrollResize();
+window.addEventListener("resize", ScrollResize);
 
 //
 // Momentum Scrolling
