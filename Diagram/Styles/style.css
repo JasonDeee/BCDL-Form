@@ -290,6 +290,7 @@ section .IMG {
 #header #cirle1 {
   background: #eb712e;
   width: 30vw;
+  height: 30vw;
   position: absolute;
   top: -4vh;
   left: -8vw;
@@ -300,6 +301,7 @@ section .IMG {
   -webkit-filter: blur(10vw);
           filter: blur(10vw);
   width: 40vw;
+  height: 40vw;
   position: absolute;
   top: -12vh;
   right: -8vw;
@@ -308,6 +310,7 @@ section .IMG {
 #header #cirle3 {
   background: #eb712e;
   width: 17vw;
+  height: 17vw;
   position: absolute;
   top: 62vh;
   left: 13vw;
@@ -785,7 +788,7 @@ section .IMG {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  aspect-ratio: calc(9 / 16);
+  width: calc(16vh * 16 / 9);
   z-index: -1;
 }
 
@@ -1003,7 +1006,6 @@ section .IMG {
   text-align: left;
   color: white;
   font-weight: 300;
-  margin-top: 40px;
 }
 
 #Sec2 .Conclusion::before {
@@ -1101,18 +1103,19 @@ section .IMG {
 
 #Sec3 #Decor3 {
   width: 13vw;
+  height: 13vw;
   left: -7vw;
 }
 
 #Sec3 #Decor4 {
   width: 13vw;
+  height: 13vw;
   right: -7vw;
 }
 
 #Sec3 .Blured {
   width: 32vw;
-  height: auto;
-  aspect-ratio: 1;
+  height: 32vw;
   border-radius: 50%;
   z-index: 2;
   display: -webkit-box;
@@ -1169,7 +1172,7 @@ section .IMG {
 #Sec3 #Content_row .Vertical_line::after {
   content: "";
   width: 10px;
-  aspect-ratio: 1;
+  height: 10px;
   border-radius: 50%;
   background: #292929;
   position: absolute;
@@ -1334,6 +1337,7 @@ section .IMG {
   top: -16vw;
   background: linear-gradient(60deg, #40e0d0, #ff8c00, #ff0080);
   width: 25vw;
+  height: 25vw;
   right: -10vw;
   position: absolute;
   -webkit-filter: blur(10vw);
@@ -1883,7 +1887,6 @@ section .IMG {
   width: 100%;
   height: 100%;
   padding: 0 5vw 0 5vw;
-  gap: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1929,9 +1932,8 @@ section .IMG {
 }
 
 #sec6 .row #Sec6_Blur {
-  aspect-ratio: 1;
-  width: 38%;
-  height: auto;
+  width: 38vw;
+  height: 38vw;
   border-radius: 50%;
   -webkit-box-shadow: 2vw 2vw 2.5vw #00000026;
           box-shadow: 2vw 2vw 2.5vw #00000026;
@@ -1982,7 +1984,10 @@ section .IMG {
 }
 
 #sec6 .row .Content_sec6 {
-  width: 62%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin-left: 50px;
   min-height: 50px;
   color: #292929;
   display: -webkit-box;
@@ -2138,7 +2143,7 @@ section .IMG {
 
 #Final_Conclusion #Comments,
 #Final_Conclusion #Ideas {
-  text-align: right;
+  text-align: left;
 }
 
 #Final_Conclusion #Reasons,
@@ -2224,17 +2229,20 @@ section .IMG {
 #Spinner_Section .Decor_Layout #SpinnerC1 {
   margin-bottom: 5vh;
   width: 5vw;
+  height: 5vw;
   margin-right: 5vw;
 }
 
 #Spinner_Section .Decor_Layout #SpinnerC2 {
   width: 13vw;
+  height: 13vw;
   margin-left: 11vw;
 }
 
 #Spinner_Section .Decor_Layout #SpinnerC3 {
   margin-top: -5vh;
   width: 25vw;
+  height: 25vw;
   margin-right: 35vw;
 }
 
@@ -2372,9 +2380,8 @@ section .IMG {
 
 #Spinner_Section .row #Spinner_Circle {
   height: 62vh;
-  width: auto;
+  width: 62vh;
   border-radius: 50%;
-  aspect-ratio: 1;
   position: relative;
   -webkit-box-shadow: 1vw 5vw 2.5vw #00000026;
           box-shadow: 1vw 5vw 2.5vw #00000026;
@@ -2487,12 +2494,12 @@ section .IMG {
   position: absolute;
   content: "";
   border-radius: 50%;
-  aspect-ratio: 1;
 }
 
 #Spinner_Section #Spinner_Circle::before {
   background: #292929;
-  height: 34%;
+  height: calc(62vh * 0.34);
+  width: calc(62vh * 0.34);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2500,7 +2507,8 @@ section .IMG {
 }
 
 #Spinner_Section #Spinner_Circle::after {
-  height: 36%;
+  height: calc(62vh * 0.36);
+  width: calc(62vh * 0.36);
   border: solid 1px #292929;
 }
 
@@ -2562,7 +2570,7 @@ section .IMG {
 
 #Spinner_Section .The_Ico {
   width: 100%;
-  aspect-ratio: 1;
+  height: 8vh;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
