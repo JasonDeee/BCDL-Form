@@ -136,7 +136,7 @@ const RewardSelect = () => {
       case 1:
       case 5:
         // code block
-        Result_Board_h5.textContent = `Ấu Yềah, một công thức, thật ngon miệng nhé!`;
+        Result_Board_h5.textContent = `Ồ, một công thức, thật ngon miệng nhé!`;
         Spinner_Ico[IndexResult].style.transform = `rotate(180deg)`;
         //
         break;
@@ -146,7 +146,7 @@ const RewardSelect = () => {
         // code block
         Spinner_Ico[IndexResult].style.transform = `rotate(0)`;
 
-        Result_Board_h5.textContent = `Ấu Yềah, một mẹo để nấu, bí mật nhé!`;
+        Result_Board_h5.textContent = `WÀO, một mẹo để nấu, bí mật nhé!`;
 
         break;
       default:
