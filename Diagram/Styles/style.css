@@ -2397,6 +2397,34 @@ section .IMG {
           justify-content: center;
 }
 
+#Spinner_Section .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+#Spinner_Section .row2 h6 {
+  font-size: 0.9vw;
+  font-weight: 700;
+  color: #696969;
+  margin-left: 20px;
+  white-space: nowrap;
+  max-width: 200px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+}
+
 #Spinner_Section .column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2418,6 +2446,7 @@ section .IMG {
 
 #Spinner_Section #Spin_But,
 #Spinner_Section #Spin_But2 {
+  white-space: nowrap;
   margin-top: 20px;
   background: #292929;
   color: #e9e7e7;
@@ -2436,8 +2465,18 @@ section .IMG {
 }
 
 #Spinner_Section #Spin_But2 {
+  margin-top: 0;
   pointer-events: none;
   opacity: 0.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #Spinner_Section #Spin_But::after,
