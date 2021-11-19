@@ -6,11 +6,27 @@ const body = document.body;
 const main = document.getElementById("main_scroll");
 const background = document.querySelector(".background");
 
-let sx = 0, // For scroll positions
+var sx = 0, // For scroll positions
   sy = 0;
-let dx = sx, // For container positions And Force (Percentage 70% Recommended)
+var dx = sx, // For container positions And Force (Percentage 70% Recommended)
   dy = sy,
   Force = 70;
+
+const wheelValidate = (e) => {
+  var isTouchPad = e.wheelDeltaY
+    ? e.wheelDeltaY === -3 * e.deltaY
+    : e.deltaMode === 0;
+
+  Force = isTouchPad ? 800 : 80;
+};
+
+const touch = () => {
+  Force = 800;
+};
+//
+
+window.addEventListener("wheel", wheelValidate);
+window.addEventListener("touchstart", touch);
 
 // Onpage Load And Refresh Events
 
