@@ -10,6 +10,23 @@ let // sx = 0, // For scroll positions
 let // dx = sx, // For container positions And Force (Percentage 70% Recommended)
   dy = sy,
   Force = 77;
+//
+
+const wheelValidate = (e) => {
+  var isTouchPad = e.wheelDeltaY
+    ? e.wheelDeltaY === -3 * e.deltaY
+    : e.deltaMode === 0;
+
+  Force = isTouchPad ? 800 : 80;
+};
+
+const touch = () => {
+  Force = 800;
+};
+//
+
+window.addEventListener("wheel", wheelValidate);
+window.addEventListener("touchstart", touch);
 
 // Onpage Load And Refresh Events
 
