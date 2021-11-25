@@ -17,7 +17,7 @@ const wheelValidate = (e) => {
     ? e.wheelDeltaY === -3 * e.deltaY
     : e.deltaMode === 0;
 
-  Force = isTouchPad ? 800 : 80;
+  Force = isTouchPad ? 800 : 77;
 };
 
 const touch = () => {
