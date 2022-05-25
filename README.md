@@ -1,2 +1,2 @@
 # BCDL-Form
-nhom6.baochidulieu.ga
+https://nhom6.baochidulieu.ga/Diagram/
